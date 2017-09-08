@@ -1,0 +1,12 @@
+1d26d53a97debba22f06703b7f4b4264 *DESCRIPTION
+08d5919b58585f008269e3b1a1206776 *NAMESPACE
+337423426e2eedf8d196cc0547157dcf *R/gibble-package.R
+293832c5ca3cb3cb2c88bec853a958ba *R/gibble.R
+2219b01ebd454aa2898c58641e2561fa *R/ibble.R
+8c53f4873bd4f9e654da22aa95e4dec5 *README.md
+d67b7f1e5d42ab72a3017818482b586d *data/minimal_mesh.rda
+b25f8b1ae4c5150a99da75ed170128b0 *inst/examples/examples.R
+47f67dba83f658d3121f043303ede880 *inst/examples/gibble_rebuild.R
+b78d7e06ce8dc59564b7526d228dc104 *man/gibble-package.Rd
+67a3b2781ebc1190081c74bffb7019df *man/gibble.Rd
+376fe4ca94309e3f9d9473077b63413b *man/minimal_mesh.Rd
