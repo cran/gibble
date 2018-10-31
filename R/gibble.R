@@ -37,16 +37,18 @@ ibble.default <- function(x, ...) stop(sprintf("objects of type %s not supported
 #' @examples
 #' gibble(minimal_mesh)
 gibble <- function(x, ...) UseMethod("gibble")
-
+#' @name gibble
 #' @export
 gibble.default <- function(x, ...) stop(sprintf("objects of type %s not supported", paste(class(x), collapse = ";")))
-
+#' @name gibble
 #' @export
 gibble.PATH <- function(x, ...) {
   p <- x[["path"]]
-  tibble::tibble(nrow = p[["ncoords_"]],
+  out <- tibble::tibble(nrow = p[["ncoords_"]],
                  ncol = p[["ncol"]],
                  type = p[["type"]],
-                 subobject = p[["subobject"]],
+                 #subobject = p[["subobject"]],
                  object = p[["object"]])
+  if ("subobject" %in% names(p)) out[["subobject"]] <- p[["subobject"]]
+  out
 }
